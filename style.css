@@ -1,0 +1,69 @@
+
+
+
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  border-bottom: 2px solid #fff;
+  transition: all ease-in-out 0.4s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.hero-section .hero-btns a,
+.resume a,
+.skills-section .skill-item {
+  transition: all ease-in-out 0.3s;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.hero-btns a:hover,
+.resume a:hover,
+.skills-section .skill-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.hero-section .scroll-down a {
+  color: white;
+  animation: bounce 2s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-down a:hover {
+  color: #67e8f9;
+  /* box-shadow: 0 4px 15px rgba(187, 210, 213, 0.2); */
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.line {
+    width: 70px;
+    height: 4px;
+    background-color: #3b82f6;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+
