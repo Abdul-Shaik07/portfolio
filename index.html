@@ -29,7 +29,8 @@
             class="flex items-center justify-between p-6 lg:px-8 bg-[#0A0014] border-b-2 border-b-gray-900">
             <div class="flex lg:flex-1">
                 <a href="#" class="-m-1.5 p-1.5">
-                    <span class="brand text-xl md:text-3xl uppercase text-white tracking-[2px] font-semibold">Portfolio</span>
+                    <span
+                        class="brand text-xl md:text-3xl uppercase text-white tracking-[2px] font-semibold">Portfolio</span>
                 </a>
             </div>
             <div class="flex lg:hidden">
@@ -44,10 +45,11 @@
                 </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12 px-5 py-2 nav-links">
-                <a href="#home" class="text-lg text-white uppercase tracking-[1px]">Home</a>
-                <a href="#about-me" class="text-lg text-white uppercase tracking-[1px]">About Me</a>
-                <a href="#my-work" class="text-lg text-white uppercase tracking-[1px]">My Work</a>
-                <a href="#certifications" class="text-lg text-white uppercase tracking-[1px]">Certifications</a>
+                <a href="#home" class="text-[18px] text-white uppercase tracking-[1px]">Home</a>
+                <a href="#about-me" class="text-[18px] text-white uppercase tracking-[1px]">About Me</a>
+                <a href="#skills" class="text-[18px] text-white uppercase tracking-[1px]">Skills</a>
+                <a href="#my-work" class="text-[18px] text-white uppercase tracking-[1px]">My Work</a>
+                <a href="#certifications" class="text-[18px] text-white uppercase tracking-[1px]">Certifications</a>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                 <a href="#contact-me"
@@ -62,7 +64,7 @@
                         class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
                         <div class="flex items-center justify-between">
                             <a href="#" class="-m-1.5 p-1.5">
-                                <span class="uppercase text-white uppercase text-xl tracking-[2px]">Portfolio</span>
+                                <span class="uppercase text-white text-xl tracking-[2px]">Portfolio</span>
                             </a>
                             <button type="button" command="close" commandfor="mobile-menu"
                                 class="-m-2.5 rounded-md p-2.5 text-gray-200">
@@ -81,6 +83,9 @@
                                     <a href="#about-me"
                                         class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-white hover:bg-white/5 uppercase">About
                                         Me</a>
+                                    <a href="#skills"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-white hover:bg-white/5 uppercase">Skills
+                                    </a>
                                     <a href="#my-work"
                                         class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-white hover:bg-white/5 uppercase">My
                                         Work</a>
@@ -150,7 +155,8 @@
                 </div>
                 <div class="about-section flex flex-col md:grid md:grid-cols-2 items-center p-4 gap-8">
                     <div class="image-container w-full md:w-full flex justify-center" data-aos="fade-down">
-                        <img src="images/image.png" alt="profile-picture" class="rounded-lg shadow-lg w-full max-w-sm hover:scale-105 transition-all duration-500 ease-in-out">
+                        <img src="images/image.png" alt="profile-picture"
+                            class="rounded-lg shadow-lg w-full max-w-sm hover:scale-105 transition-all duration-500 ease-in-out">
                     </div>
                     <div class="info-container flex flex-col data" data-aos="fade-down">
                         <h5 class="text-4xl font-semibold text-white text-center">Get to know me</h5>
@@ -165,7 +171,7 @@
                             contribute,
                             learn and grow. If you have a good opportunity
                             that matches my skills then don't hesitate to contact me.</p>
-                        <div class="skills-section flex flex-col items-center justify-center">
+                        <!-- <div class="skills-section flex flex-col items-center justify-center">
                             <h6 class="text-2xl font-semibold text-white mt-6 text-center">My Skills</h6>
                             <div class="line" data-aos="fade-up"></div>
                             <div class="skills-grid flex flex-wrap gap-[15px] text-center justify-items-center" data-aos="fade-in" data-aos-delay="2000">
@@ -188,7 +194,7 @@
                                 <span class="skill-item border border-gray-700 px-3 rounded-md text-md">IntelliJ
                                     IDEA</span>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="mt-6 flex justify-center gap-x-4 resume" data-aos="fade-up" data-aos-delay="1000">
                             <a href="images/Shaik.Abdul.Resume.pdf"
                                 class="text-sm md:text-md font-semibold text-white border border-blue-900/50 px-3.5 py-2.5 rounded-md"
@@ -200,49 +206,142 @@
             </div>
         </section>
 
+        <!-- skills-section -->
+        <section class="skills-section" id="skills">
+            <div class="container mx-auto px-6 py-22 sm:py-48 lg:py-40">
+                <div class="text-center mb-16" data-aos="fade-down">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Skills</h2>
+                    <div class="line" data-aos="fade-up"></div>
+                </div>
+                <div
+                    class="skills-container sm:grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 p-6">
+                    <div
+                        class="skills-card flex flex-col items-center gap-7 border border-gray-800 p-8 rounded-lg shadow-2xl backdrop-blur-2xl hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)] active:shadow-[0_4px_20px_rgba(0,0,255,0.3)] hover:-translate-3 transition-all ease-in-out duration-500 cursor-pointer mb-4">
+                        <span class="icon"><img width="100" height="100"
+                                src="https://img.icons8.com/plasticine/100/code--v1.png" alt="code--v1" /></span>
+                        <h2 class="text-3xl md:text-4xl">Frontend</h2>
+                        <div class="skills-set flex flex-wrap gap-5 md:text-lg text-md text-gray-300">
+                            <span class="border px-3 py-0.5 rounded-md border-gray-600">HTML</span>
+                            <span class="border px-3 py-0.5 rounded-md border-gray-600">CSS</span>
+                            <span class="border px-3 py-0.5 rounded-md border-gray-600">Tailwindcss</span>
+                            <span class="border px-3 py-0.5 rounded-md border-gray-600">JavaScript</span>
+                            <span class="border px-3 py-0.5 rounded-md border-gray-600">Rect</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="skills-card flex flex-col items-center gap-7 border border-gray-800 p-8 shadow-2xl rounded-lg backdrop-blur-2xl hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)] active:shadow-[0_4px_20px_rgba(0,0,255,0.3)] hover:-translate-3 transition-all ease-in-out duration-500 cursor-pointer mb-4">
+                        <span class="icon"><img width="100" height="100"
+                                src="https://img.icons8.com/plasticine/100/code--v1.png" alt="code--v1" /></span>
+                        <h2 class="text-3xl md:text-4xl">Backend</h2>
+                        <div class="skills-set flex flex-wrap gap-5 md:text-lg text-md text-gray-300">
+                            <span class="border border-gray-600 px-3 py-0.5 rounded-md">Java</span>
+                            <span class="border border-gray-600 px-3 py-0.5 rounded-md">Spring boot</span>
+                            <span class="border border-gray-600 px-3 py-0.5 rounded-md">Microservices</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="skills-card flex flex-col items-center gap-7 border border-gray-800 p-8 shadow-2xl rounded-lg backdrop-blur-2xl hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)] active:shadow-[0_4px_20px_rgba(0,0,255,0.3)] hover:-translate-3 transition-all ease-in-out duration-500 cursor-pointer mb-4">
+                        <span class="icon"><img width="100" height="100"
+                                src="https://img.icons8.com/3d-fluency/94/database.png" alt="database" /></span>
+                        <h2 class="text-3xl md:text-4xl">Database</h2>
+                        <div class="skills-set flex flex-wrap gap-5 md:text-lg text-md text-gray-300">
+                            <span class="border border-gray-600 px-3 py-0.5 rounded-md">MySQL</span>
+                            <span class="border border-gray-600 px-3 py-0.5 rounded-md">PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="skills-card flex flex-col items-center gap-7 border border-gray-800 shadow-2xl p-8 rounded-lg backdrop-blur-2xl hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)] active:shadow-[0_4px_20px_rgba(0,0,255,0.3)] hover:-translate-3 transition-all ease-in-out duration-500 cursor-pointer mb-4">
+                        <span class="icon"><img width="100" height="100"
+                                src="https://img.icons8.com/3d-fluency/94/tools.png" alt="tools" /></span>
+                        <h2 class="text-3xl md:text-4xl">Tools</h2>
+                        <div class="skills-set flex flex-wrap gap-5 md:text-lg text-md text-gray-300">
+                            <span class="border border-gray-600 px-3 py-0.5 rounded-md">Maven</span>
+                            <span class="border border-gray-600 px-3 py-0.5 rounded-md">Git</span>
+                            <span class="border border-gray-600 px-3 py-0.5 rounded-md">Github</span>
+                            <span class="border border-gray-600 px-3 py-0.5 rounded-md">VSCode</span>
+                            <span class="border border-gray-600 px-3 py-0.5 rounded-md">Intellij</span>
+                            <span class="border border-gray-600 px-3 py-0.5 rounded-md">Postman</span>
+                            <span class="border border-gray-600 px-3 py-0.5 rounded-md">Swagger</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
         <!-- projects section -->
 
-        <section class="projects-section">
+        <section class="projects-section bg-[#0f172a]">
             <div class="container mx-auto px-6 py-22 sm:py-48 lg:py-40" id="my-work">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-white mb-4" data-aos="fade-down">My Work</h2>
                     <div class="line" data-aos="fade-up" data-aos-delay="1000"></div>
-                    <p class="text-md md:text-lg text-gray-300 max-w-2xl mx-auto" data-aos="fade-right">Here are a few projects I've worked on.</p>
+                    <p class="text-md md:text-lg text-gray-300 max-w-2xl mx-auto" data-aos="fade-right">Here are a few
+                        projects I've worked on.</p>
                 </div>
                 <div class="projects-grid grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
                     <!-- Project Item -->
-                    <div class="project-item backdrop-blur-lg bg-transparent border border-gray-800 hover:scale-105 active:scale-115 transition-all ease-in-out duration-500 shadow-2xl overflow-hidden rounded-md hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)] active:shadow-[0_4px_20px_rgba(0,0,255,0.3)]">
+                    <div
+                        class="project-item backdrop-blur-lg bg-transparent border border-gray-800 hover:scale-105 active:scale-115 transition-all ease-in-out duration-500 shadow-2xl overflow-hidden rounded-md hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)] active:shadow-[0_4px_20px_rgba(0,0,255,0.3)]">
                         <img src="images/e-commerce-picture.jpg" alt="e-commerce">
                         <div class="body flex flex-col items-center gap-6 p-4">
                             <h5 class="text-xl md:text-3xl text-center">ShoppingGo</h5>
-                            <p class="text-center text-md md:text-[1.2rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis non expedita nobis fugiat soluta dicta quisquam tempora culpa, ea eos illo incidunt commodi ad ipsum nisi, sunt voluptas exercitationem.</p>
+                            <p class="text-center text-md md:text-[1.2rem]">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Dolore officiis non expedita nobis fugiat soluta dicta quisquam
+                                tempora culpa, ea eos illo incidunt commodi ad ipsum nisi, sunt voluptas exercitationem.
+                            </p>
                             <div class="demo-buttons flex flex-wrap space-x-6">
-                                <a href="https://effulgent-pegasus-511bae.netlify.app/" class="px-3 py-1 border border-blue-900 md:text-xl text-md rounded-md hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)]">live demo <span aria-hidden="true">→</span></a>
-                                <a href="https://github.com/Abdul-Shaik07/shoppingGo" class="px-3 py-1 border border-blue-900 md:text-xl text-md rounded-md hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)]">code <span aria-hidden="true">→</span></a>
+                                <a href="https://effulgent-pegasus-511bae.netlify.app/"
+                                    class="px-3 py-1 border border-blue-900 md:text-xl text-md rounded-md hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)]">live
+                                    demo <span aria-hidden="true">→</span></a>
+                                <a href="https://github.com/Abdul-Shaik07/shoppingGo"
+                                    class="px-3 py-1 border border-blue-900 md:text-xl text-md rounded-md hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)]">code
+                                    <span aria-hidden="true">→</span></a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-item backdrop-blur-lg bg-transparent border border-gray-800 hover:scale-105 active:scale-115 transition-all ease-in-out duration-500 shadow-2xl overflow-hidden rounded-md hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)] active:shadow-[0_4px_20px_rgba(0,0,255,0.3)]">
+                    <div
+                        class="project-item backdrop-blur-lg bg-transparent border border-gray-800 hover:scale-105 active:scale-115 transition-all ease-in-out duration-500 shadow-2xl overflow-hidden rounded-md hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)] active:shadow-[0_4px_20px_rgba(0,0,255,0.3)]">
                         <img src="images/e-commerce-picture.jpg" alt="e-commerce">
                         <div class="body flex flex-col items-center gap-6 p-4">
                             <h5 class="text-xl md:text-3xl text-center">ShoppingGo</h5>
-                            <p class="text-center text-md md:text-[1.2rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis non expedita nobis fugiat soluta dicta quisquam tempora culpa, ea eos illo incidunt commodi ad ipsum nisi, sunt voluptas exercitationem.</p>
+                            <p class="text-center text-md md:text-[1.2rem]">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Dolore officiis non expedita nobis fugiat soluta dicta quisquam
+                                tempora culpa, ea eos illo incidunt commodi ad ipsum nisi, sunt voluptas exercitationem.
+                            </p>
                             <div class="demo-buttons flex flex-wrap space-x-6">
-                                <a href="https://effulgent-pegasus-511bae.netlify.app/" class="px-3 py-1 border border-blue-900 md:text-xl text-md rounded-md hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)]">live demo <span aria-hidden="true">→</span></a>
-                                <a href="https://github.com/Abdul-Shaik07/shoppingGo" class="px-3 py-1 border border-blue-900 md:text-xl text-md rounded-md hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)]">code <span aria-hidden="true">→</span></a>
+                                <a href="https://effulgent-pegasus-511bae.netlify.app/"
+                                    class="px-3 py-1 border border-blue-900 md:text-xl text-md rounded-md hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)]">live
+                                    demo <span aria-hidden="true">→</span></a>
+                                <a href="https://github.com/Abdul-Shaik07/shoppingGo"
+                                    class="px-3 py-1 border border-blue-900 md:text-xl text-md rounded-md hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)]">code
+                                    <span aria-hidden="true">→</span></a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-item backdrop-blur-lg bg-transparent border border-gray-800 hover:scale-105 active:scale-115 transition-all ease-in-out duration-500 shadow-2xl overflow-hidden rounded-md hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)] active:shadow-[0_4px_20px_rgba(0,0,255,0.3)]">
+                    <div
+                        class="project-item backdrop-blur-lg bg-transparent border border-gray-800 hover:scale-105 active:scale-115 transition-all ease-in-out duration-500 shadow-2xl overflow-hidden rounded-md hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)] active:shadow-[0_4px_20px_rgba(0,0,255,0.3)]">
                         <img src="images/e-commerce-picture.jpg" alt="e-commerce">
                         <div class="body flex flex-col items-center gap-6 p-4">
                             <h5 class="text-xl md:text-3xl text-center">ShoppingGo</h5>
-                            <p class="text-center text-md md:text-[1.2rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis non expedita nobis fugiat soluta dicta quisquam tempora culpa, ea eos illo incidunt commodi ad ipsum nisi, sunt voluptas exercitationem.</p>
+                            <p class="text-center text-md md:text-[1.2rem]">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Dolore officiis non expedita nobis fugiat soluta dicta quisquam
+                                tempora culpa, ea eos illo incidunt commodi ad ipsum nisi, sunt voluptas exercitationem.
+                            </p>
                             <div class="demo-buttons flex flex-wrap space-x-6">
-                                <a href="https://effulgent-pegasus-511bae.netlify.app/" class="px-3 py-1 border border-blue-900 md:text-xl text-md rounded-md hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)]">live demo <span aria-hidden="true">→</span></a>
-                                <a href="https://github.com/Abdul-Shaik07/shoppingGo" class="px-3 py-1 border border-blue-900 md:text-xl text-md rounded-md hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)]">code <span aria-hidden="true">→</span></a>
+                                <a href="https://effulgent-pegasus-511bae.netlify.app/"
+                                    class="px-3 py-1 border border-blue-900 md:text-xl text-md rounded-md hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)]">live
+                                    demo <span aria-hidden="true">→</span></a>
+                                <a href="https://github.com/Abdul-Shaik07/shoppingGo"
+                                    class="px-3 py-1 border border-blue-900 md:text-xl text-md rounded-md hover:shadow-[0_4px_20px_rgba(0,0,255,0.3)]">code
+                                    <span aria-hidden="true">→</span></a>
                             </div>
                         </div>
                     </div>
@@ -252,23 +351,27 @@
         </section>
 
         <!-- certifications section -->
-        <section class="certifications bg-[#0f172a]">
+        <section class="certifications">
             <div class="container mx-auto px-6 py-22 sm:py-48 lg:py-40" id="certifications">
                 <div class="text-center mb-16" data-aos="fade-down">
                     <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Certifications</h2>
                     <div class="line" data-aos="fade-up"></div>
-                    <p class="text-md md:text-lg text-gray-300 max-w-2xl mx-auto" data-aos="fade-right" data-aos-delay="2000">Here are some of the certifications
+                    <p class="text-md md:text-lg text-gray-300 max-w-2xl mx-auto" data-aos="fade-right"
+                        data-aos-delay="2000">Here are some of the certifications
                         I've earned to validate my skills and knowledge in various areas of technology and development.
                     </p>
                 </div>
                 <div class="certifications-grid grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
-                    <div class="certification-item overflow-hidden hover:scale-105 transition-all ease-in-out duration-500 active:scale-110 rounded-md">
+                    <div
+                        class="certification-item overflow-hidden hover:scale-105 transition-all ease-in-out duration-500 active:scale-110 rounded-md">
                         <img src="images/java-certificate.jpg" alt="Certification 1" class="">
                     </div>
-                    <div class="certification-item overflow-hidden hover:scale-105 transition-all ease-in-out duration-500 active:scale-110 rounded-md">
+                    <div
+                        class="certification-item overflow-hidden hover:scale-105 transition-all ease-in-out duration-500 active:scale-110 rounded-md">
                         <img src="images/mysql-certificate.png" alt="Certification 2" class="">
                     </div>
-                    <div class="certification-item overflow-hidden hover:scale-105 transition-all ease-in-out duration-500 active:scale-110 rounded-md">
+                    <div
+                        class="certification-item overflow-hidden hover:scale-105 transition-all ease-in-out duration-500 active:scale-110 rounded-md">
                         <img src="images/mysql-certificate.png" alt="Certification 2" class="">
                     </div>
                     <!-- Add more certification items as needed -->
@@ -276,7 +379,7 @@
         </section>
 
         <!-- contact-me section -->
-        <section class="contact-me-section" id="contact-me">
+        <section class="contact-me-section bg-[#0f172a]" id="contact-me">
             <div class="container mx-auto px-6 py-22 sm:py-48 lg:py-40">
                 <div class="text-center mb-16" data-aos="fade-down">
                     <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Get in Touch</h2>
@@ -306,7 +409,7 @@
         </section>
     </main>
 
-    <footer class="bg-[#0f172a]">
+    <footer class="">
         <div class="container mx-auto px-6 py-6 text-center">
             <h1 class="uppercase text-3xl text-white tracking-[2px]" data-aos="fade-down">Portfolio</h1>
             <div class="flex items-center justify-center gap-x-6 my-4 footer-links">
@@ -333,6 +436,9 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- aos script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Lottie animated icons js link-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 
     <script>
         var typed = new Typed('#element', {
